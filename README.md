@@ -15,7 +15,8 @@ virtualenv tensorflow
 
 source tensorflow/bin/activate
 
-# Deactive
-deactive
+pip install tensorflow
+
+docker run --name tensorflow -it -p 8888:8888 gcr.io/tensorflow/tensorflow
 ```
 
