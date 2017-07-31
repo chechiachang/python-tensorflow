@@ -11,11 +11,12 @@
 ```
 pip install virtualenv
 
-virtualenv tensorflow
+virtualenv --system-site-packages env1
 
-source tensorflow/bin/activate
+source env/bin/activate
 
-# Deactive
-deactive
+pip install tensorflow
+
+docker run --name tensorflow -it -p 8888:8888 gcr.io/tensorflow/tensorflow
 ```
 
